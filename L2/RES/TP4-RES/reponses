@@ -1,0 +1,23 @@
+ZHANG Zhile
+MOULHERAT Hadrien
+
+//Q1: Car les 1024 premiers ports sont reserve soit pour des protocoles internet (UDP, TCP), soit pour le systeme d'exploitation (serveur X)
+
+/*Q2: Etant donnee qu'il n'y a pas d'etablissement de connexion, pour que le client communique avec le serveur, il faut que le client
+ * donne toutes les information neccesaire dans le datagramme pour que le serveur lui reponde. Donc le serveur recupere les information, nottamment l'ip
+ * a travers le datagramme que le client a envoyer en premier
+ */
+
+//Q3: Ca marche !
+
+/*Q4: Concernant le port destination (du point de vue du serveur) il correspond bien aux port choisie dans l'application.
+ * Enfin concernant le port source (du point de vue du serveur) il est different car il est generer lors de la premierre 
+ * communication entre le serveur et le client
+ */ 
+
+/*Q5: L'addresse MAC utiliser pour les deux paquets echanges entre le serveur et le client est **00:00:00:00:00:00**.
+ * Elle ne correspond pas a l'addresse MAC de notre machine (**14:b3:1f:02:50:23**) car il s'agit d'une communication en local (localhost).
+ * Donc il ne pas neccassaire d'utiliser l'adresse, car l'addresse sert a identifier une machine dans un reseaux et dans notre contexte il s'agit de notre machine. 
+ */
+
+//Q6: Le client et le serveur ne se terminent pas. Car le serveur attend un message du client et le client attent la reponse du serveur. 

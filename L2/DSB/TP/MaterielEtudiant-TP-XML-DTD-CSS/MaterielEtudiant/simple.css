@@ -1,0 +1,21 @@
+* {
+	display: block;
+	margin-left: 1em ;
+	margin-top: 0.2em ;
+	margin-bottom: 0.2em ;
+	margin-right: 0.5em ;
+	border: solid thin ;
+	padding-left: 0.5em;
+}
+
+préparation {
+	list-style-type: decimal;
+	
+	counter-reset: item;
+}
+item {
+	display: list-item;
+	counter-increment: inherit;
+	
+	
+}

@@ -1,0 +1,155 @@
+zhile ZHANG
+Hadrien MOULHERAT
+
+Q.1.2.1	Nom d'hôte : d022m02 ("hostname")
+		Nom de domaine : istic.univ-rennes1.fr ("hostname -A")
+
+Q.1.2.2	Grace a la commande "ip address" nous voyons que les principales interfaces reseau sont :
+		- lo (loopback)
+		- enp0s31f6 (interface Ethernet)
+		- docker0
+		- (vlan11@enp0s31f6 et vnet0 sont des interfaces virtuelles)
+		
+		Adresse IP de enp0s31f6 : 148.60.1.12
+		Adresse MAC de enp0s31f6 : 14:b3:1f:01:d1:0e
+		(Nous pouvions aussi utiliser la commande "ifconfig" pour cet exercice)
+	
+Q.1.2.3	L'interface lo, represente adresse de loopback.
+		Adresse IP de lo : 127.0.0.1
+		Adresse MAC de lo : 00:00:00:00:00:00
+	
+Q.1.2.4
+Grace a la commande "ip adress" nous savons que notre adresse IP est 148.60.1.12 et le masque de sous resseaux associer a cette adresse IP est de 21 bits (148.60.1.12/21).
+On a alors 32-21 bits soit 11 bits pour generer des adresses IP. Avec 11 bits on peut generer 2^11 soit 2048 adresses IP differentes. On retire a ce resultat deux adresse IP, car l'adresse 148.60.7.255 correspond a l'adresse de broadcast et l'adresse 148.60.0.0 ne peut pas etre utiliser par une machine comme adresse source. Au total on a donc 2046 adresse IP differentes utilisable.
+On ne peut pas deduire le plan d'adressage des autres salles du batiment etant donnee...
+
+Q.1.2.5
+	|      @IP     |      Fully Qualified Domain Name (FQDN)                                                                |
+	| 148.60.10.15 | Pas de FQDN. La machine n'est pas active, car aucune reponse recu avec la commande "ping 148.60.10.15" |
+	| 148.60.4.3   | sybille2-vlan2.istic.univ-rennes1.fr (FQDN obtenue grace a la commande "hostname -t CNAME 148.60.4.3") |
+	| 148.60.12.7  | i207m07.istic.univ-rennes1.fr (FQDN obtenue grace a la commande "hostname -t CNAME 148.60.12.7")       |
+	| 148.60.2.200 | Pas de FQDN. La machine n'est pas active, car aucune reponse recu avec la commande "ping 148.60.2.200" |
+	| 148.60.1.39  | d022m02.istic.univ-rennes1.fr (FQDN obtenue grace a la commande "hostname -t CNAME 148.60.1.12")       |
+	
+Q.1.2.6 Grace aux fichier /etc/services qui ressence tout les ports que le systeme d'exploitation a besoin pour communiquer, nous pouvons utiliser "grep" ou "sed" pour chercher dans le fichier les lignes qui nous interessent:
+	DNS : 53 (cat /etc/services | grep "dns")
+	HTTPS : 443 (cat /etc/services | grep "https")
+	FTP : 21 (cat /etc/services | grep "ftp")
+	SMTP : 25 (cat /etc/services | grep "smtp")
+	SSH : 22 (cat /etc/services | grep "ssh")
+
+Q.1.2.7	Pour obtenir les connexions web en cours sur la machine, on utilise la commande "ss", avec les parametres -t, -r et -p.
+		Le parametre -p permet d'afficher le processus associe a la connexion, ainsi avec "grep" nous pouvons nous concentre uniquer sur le naviguateur (firefox). 
+		
+output de "ss -trp | grep "firefox":
+
+State     Recv-Q     Send-Q     Local Address:Port                      Peer Address:Port                                   Process
+
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:58406     server-52-84-174-25.cdg50.r.cloudfront.net:https    users:(("firefox-esr",pid=116089,fd=169))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:58410     server-52-84-174-25.cdg50.r.cloudfront.net:https    users:(("firefox-esr",pid=116089,fd=176))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:55494     server-52-222-174-22.cdg50.r.cloudfront.net:https   users:(("firefox-esr",pid=116089,fd=106))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:58414     server-52-84-174-25.cdg50.r.cloudfront.net:https    users:(("firefox-esr",pid=116089,fd=180))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:58382     univ-rennes1.partage.renater.fr:https               users:(("firefox-esr",pid=116089,fd=183))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:58408     server-52-84-174-25.cdg50.r.cloudfront.net:https    users:(("firefox-esr",pid=116089,fd=173))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:58404     server-52-84-174-25.cdg50.r.cloudfront.net:https    users:(("firefox-esr",pid=116089,fd=37))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:55504     server-52-222-174-22.cdg50.r.cloudfront.net:https   users:(("firefox-esr",pid=116089,fd=200))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:55500     server-52-222-174-22.cdg50.r.cloudfront.net:https   users:(("firefox-esr",pid=116089,fd=196))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:58412     server-52-84-174-25.cdg50.r.cloudfront.net:https    users:(("firefox-esr",pid=116089,fd=35))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:55498     server-52-222-174-22.cdg50.r.cloudfront.net:https   users:(("firefox-esr",pid=116089,fd=194))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:55496     server-52-222-174-22.cdg50.r.cloudfront.net:https   users:(("firefox-esr",pid=116089,fd=185))
+ESTAB     0          0          d022m02.istic.univ-rennes1.fr:55502     server-52-222-174-22.cdg50.r.cloudfront.net:https   users:(("firefox-esr",pid=116089,fd=197))
+
+Q.1.2.8: On a utiliser la commande "route -n". "route" est une commande qui permet d'afficher la table de routage au meme titre que "ip route". L'option -n permet d'afficher les adresses numeriques.
+
+Table de routage IP du noyau
+Destination     Passerelle      Genmask         Indic Metric Ref    Use Iface
+0.0.0.0         148.60.7.254    0.0.0.0         UG    100    0        0 enp0s31f6
+148.60.0.0      0.0.0.0         255.255.248.0   U     100    0        0 enp0s31f6
+169.254.0.0     0.0.0.0         255.255.0.0     U     425    0        0 br11
+169.254.0.0     0.0.0.0         255.255.0.0     U     1000   0        0 vlan11
+172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 docker0
+224.0.0.0       0.0.0.0         240.0.0.0       U     425    0        0 br11
+
+Q.1.2.9 : Pour obtenir la liste des serveur DNS qui font autorite nous avons utiliser la commande "host -C STATION"
+	- istic.univ-rennes1.fr (host -C istic.univ-rennes1.fr):
+		Nameserver 129.20.254.1:
+			istic.univ-rennes1.fr has SOA record resone.univ-rennes1.fr. istic-admin.listes.univ-rennes1.fr. 2021101100 21600 3600 2592000 3600
+		Nameserver 193.51.24.1:
+			istic.univ-rennes1.fr has SOA record resone.univ-rennes1.fr. istic-admin.listes.univ-rennes1.fr. 2021101100 21600 3600 2592000 3600
+
+	- yasugari.irisa.fr (dig @d.nic.fr SOA +multiline yasuragi.irisa.fr):
+		irisa.fr.		172800 IN NS dns-ext2.inria.fr
+		irisa.fr.		172800 IN NS dns.inria.fr
+		irisa.fr.		172800 IN NS ns2.nic.fr	
+	
+	- www.google.fr (host -C google.fr):
+		Nameserver 216.239.36.10:
+			google.fr has SOA record ns1.google.com. dns-admin.google.com. 402094934 900 900 1800 60
+		Nameserver 216.239.32.10:
+			google.fr has SOA record ns1.google.com. dns-admin.google.com. 402094934 900 900 1800 60
+		Nameserver 216.239.38.10:
+			google.fr has SOA record ns1.google.com. dns-admin.google.com. 402094934 900 900 1800 60
+		Nameserver 216.239.34.10:
+			google.fr has SOA record ns1.google.com. dns-admin.google.com. 402094934 900 900 1800 60
+	
+	- www.mit.edu (host -C mit.edu):
+		Nameserver 96.7.49.64:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+		Nameserver 95.101.36.64:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+		Nameserver 184.26.161.64:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+		Nameserver 23.74.25.64:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+		Nameserver 193.108.91.173:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+		Nameserver 193.108.91.37:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+		Nameserver 2.16.40.64:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+		Nameserver 95.100.175.64:
+			mit.edu has SOA record use2.akam.net. network-request.mit.edu. 15355 900 900 3600000 3600
+
+	- www.etsi.org (host -C etsi.org):
+		Nameserver 173.245.59.139:
+			etsi.org has SOA record fay.ns.cloudflare.com. dns.cloudflare.com. 2038458917 10000 2400 604800 3600
+		Nameserver 172.64.33.139:
+			etsi.org has SOA record fay.ns.cloudflare.com. dns.cloudflare.com. 2038458917 10000 2400 604800 3600
+		Nameserver 108.162.193.139:
+			etsi.org has SOA record fay.ns.cloudflare.com. dns.cloudflare.com. 2038458917 10000 2400 604800 3600
+		Nameserver 172.64.32.115:
+			etsi.org has SOA record fay.ns.cloudflare.com. dns.cloudflare.com. 2038458917 10000 2400 604800 3600
+		Nameserver 108.162.192.115:
+			etsi.org has SOA record fay.ns.cloudflare.com. dns.cloudflare.com. 2038458917 10000 2400 604800 3600
+		Nameserver 173.245.58.115:
+			etsi.org has SOA record fay.ns.cloudflare.com. dns.cloudflare.com. 2038458917 10000 2400 604800 3600
+
+(Il est aussi possible de trouver la liste des serveurs DNS qui font autorite avec la commande "dig". Nous avons alors trouve la liste suivante:
+
+	-Station (d020m030) (dig @d.nic.fr SOA +multiline d020m03.istic.univ-rennes1.fr):
+	Serveur DNS qui font autorite:
+		univ-rennes1.fr.	172800 IN NS resone.univ-rennes1.fr.
+		univ-rennes1.fr.	172800 IN NS soleil.uvsq.fr.
+	
+	-yasuragi.irisa.fr (dig @d.nic.fr SOA +multiline yasuragi.irisa.fr):
+	Serveur DNS qui font autorite:
+		irisa.fr.		172800 IN NS dns-ext2.inria.fr.
+		irisa.fr.		172800 IN NS dns.inria.fr.
+		irisa.fr.		172800 IN NS ns2.nic.fr.
+		
+	www.google.fr (dig @d.nic.fr SOA +multiline www.google.fr):"
+	Serveur DNS qui font autorite:
+		google.fr.		172800 IN NS ns1.google.com.
+		google.fr.		172800 IN NS ns4.google.com.
+		google.fr.		172800 IN NS ns3.google.com.
+		google.fr.		172800 IN NS ns2.google.com. )
+
+Q.1.2.10
+On constate que pour chacun des reseaux (h7, RS, vm-birdgl) les paquets des differantes machines et services qui finissent par ".fr" (d020m03.istic.univ-rennes1.fr et www.google.fr) seront toujours dirriger vers le meme serveur a savoir: 
+	".franceix.net" pour le reseaux h7
+	".hivane.net" pour le reseaux RS
+	".rezopole.net" pour le reseaux vm-birdgl
+(A propos de yasuragi.irisa.fr, il nous est impossible avec les outil disponible de suivre les paquets)
+Concernant www.mit.edu www.tahi.org et www.etsi.org 
+
+Enfin les paquets sont diriger plus precisement vers leurs serveur ou les sites sont stocker 

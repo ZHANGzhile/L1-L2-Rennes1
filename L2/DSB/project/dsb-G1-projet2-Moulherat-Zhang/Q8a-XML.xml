@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hotel SYSTEM "Q7-DTD2.dtd">
+<?xml-stylesheet href="Q10a-XML.css" type="text/css"?>
+<hotel>
+	<documentation auteur = "Zhile ZHANG" date = "01/04/2022">
+		La partie MCD utilise MOCODO dont l’adresse est <lien>http ://mocodo.wingi.net/</lien> et une image se trouve ici <lien>imageMCD.png</lien>
+	</documentation>
+	<documentation auteur = "Hadrien Moulherat" date = "01/04/2022">
+		La partie MPD utilise phpMyAdmin V4 dont l’adresse est <lien>http://mysql.istic.univ-rennes1.fr/</lien>
+	</documentation>
+</hotel>

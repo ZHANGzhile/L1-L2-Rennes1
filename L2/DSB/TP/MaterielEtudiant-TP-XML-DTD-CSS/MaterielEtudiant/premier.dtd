@@ -1,0 +1,7 @@
+<!ELEMENT document (para)*>
+<!ATTLIST document
+	date CDATA #REQUIRED
+>
+<!ELEMENT para (titre, pgf+)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT pgf (#PCDATA)>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet href="recettes.css" type="text/css"?>
+<!DOCTYPE recettes SYSTEM "recettes.dtd">
+<recettes>
+	<rubrique>
+		<nom>Entrées</nom>
+		<recette>
+			<nom>Aubergines à la menthe</nom>
+			<temps>Préparation : 10 min Cuisson : 10 min</temps>
+			<ingrédients>
+				Marinade :
+				<item>6 h 12 aubergines oblongues de 150 g chacune</item>
+				<item>6 cuil. à soupe de vinaigre de xérès</item>
+				<item>1 dl d'huile d'olive</item>
+				<item>4 gousses d'ail</item>
+				<item>1 cuil. à café d'origan</item>
+				<item>6 brins de menthe</item>
+				<item>sel, poivre</item>
+			</ingrédients>
+			<préparation>
+				<item>
+					Eliminez le pédoncule des aubergines. Lavez les
+					aubergines et coupez-les de sel et faites les cuire
+					à la vapeur pendant 10 min environ, jusqu'à ce
+					qu'elles soient tendres.
+				</item>
+				<item>
+					Lorsque les aubergines sont cuites, égoutez-les dans
+					une passoire puis laissez- les refroidir. Mettez-les
+					ensuite dans un plat creux.
+				</item>
+				<item>
+					Pelez les gousses d'ail et coupez-les en fines
+					lamelles en éliminant les germes. Lavez les brins de
+					mente, effeuillez-les et épongez les feuilles.
+				</item>
+				<item>
+					Mettez le vinaigre, l'huile du sel et du poivre dans
+					un bol et émulsionnez le tout à la fourchette.
+					Versez le contenu du bol sur les aubergines et
+					mélangez. Ajoutez l'origan, les feuilles de menthe,
+					en les froissant entre vos doigts, et l'ail.
+					Mélanger encore.
+				</item>
+				<item>
+					Laissez mariner 6 h au moins où jusqu'au lendemain
+					avant de servir.
+				</item>
+			</préparation>
+		</recette>
+		<recette>
+			<nom>Gambas à l'ail</nom>
+			<temps>Préparation : 5 à 10 min Cuisson : 6 min</temps>
+			<ingrédients>
+				<item>24 gambas crues</item>
+				<item>4 gousses d'ail</item>
+				<item>1 petit piment frais</item>
+				<item>1 cuil. à soupe de persil ciselé</item>
+				<item>2 cuil. à soupe d'huile d'olive</item>
+				<item>sel, poivre</item>
+			</ingrédients>
+			<préparation>
+				<item>
+					Pelez les gousses d'ail, hachez-les. Coupez le
+					piment en fines rondelles.
+				</item>
+				<item>
+					Versez l'huile dans une grande poêle, ajoutez l'ail
+					et le piment. Faites chauffer 1 min à feu vif en
+					remuant pour éviter qu'ils ne brûlent.
+				</item>
+				<item>
+					Ajoutez les gambas. Cuisez-les 2 à 3 min en les
+					tournant jusqu'à ce qu'elles deviennent rouge vif.
+					Salez, poivrez, parsemez de persil ciselé, mélangez.
+				</item>
+				<item>Servez chaud ou froid.</item>
+			</préparation>
+		</recette>
+	</rubrique>
+	<rubrique>
+		<nom>Viandes</nom>
+		<recette>
+			<nom>La poule au riz</nom>
+			<temps>Préparation : 30 mn Cuisson : 2 h 30 mn</temps>
+			<ingrédients>
+				Pour 6 personnes
+				<item>une poule de 2 kilos environ</item>
+				<item>un oignon piqué de 2 clous de girofle</item>
+				<item>une branche de céleri, un bouquet garni</item>
+				<item>3 carottes, 2 navets, 6 blancs de poireau</item>
+				<item>350 g de riz</item>
+				<item>gros sel</item>
+				Pour la sauce
+				<item>
+					60 g de beurre, 50 g de farine, 2 dl de crème
+				</item>
+				<item>poivre frais moulu</item>
+			</ingrédients>
+			<préparation>
+				<item>
+					Flambez, parez et videz la poule. Mettez-la dans une
+					marmite, couvrez-la d'au moins 3 litres d'eau
+					froide. Ajoutez l'oignon, le céleri, le bouquet
+					garni, amenez doucement à ébullition puis écumez
+					avec soin.
+				</item>
+				<item>Faites repartir l'ébullition; assaisonnez.</item>
+				<item>
+					Epluchez et lavez carottes et navets, coupez-les en
+					morceaux. Jetez ces légumes dans la marmite dès que
+					l'eau recommence à bouillir. Continuez la cuisson à
+					frémissements doux.
+				</item>
+				<item>
+					Trente minutes avant la fin de la cuisson, ajoutez
+					dans la marmite les blancs de poireau soigneusement
+					lavés au préalable.
+				</item>
+				<item>
+					Mesurez le riz, lavez-le jusqu'à ce que l'eau soit
+					claire. Faites-le cuire dans 2 fois son volume
+					d'eau.
+				</item>
+				<item>
+					Préparez la sauce: faites un roux blanc avec le
+					beurre et la farine. Quand il commence à mousser,
+					mouillez-le avec un demi-litre de bouillon de
+					cuisson et laissez cuire 10 minutes.
+				</item>
+				<item>
+					Ajoutez la crème, continuez la cuisson 5 minutes,
+					rectifiez l'assaisonnement.
+				</item>
+				<item>
+					Pour servir, dressez la poule entourée de ses
+					légumes sur le plat de service. Présentez en même
+					temps le riz et la Sauce à la crème; le reste de
+					bouillon fera un excellent potage.
+				</item>
+			</préparation>
+		</recette>
+		<recette>
+			<nom>Filet de porc grand veneur</nom>
+			<temps>Préparation : 20 mn Cuisson : 1 h 30 mn</temps>
+			<ingrédients>
+				<item>Un filet de porc désossé d'un kilo 600</item>
+				<item>2 cuillerées à soupe d'huile</item>
+				Pour la marinade:
+				<item>une bouteille de vin rouge</item>
+				<item>3 clous de girofle</item>
+				<item>un oignon, 2 gousses d'ail</item>
+				<item>3 baies de genièvre</item>
+				<item>un filet de vinaigre, un trait de cognac</item>
+				<item>sel et poivre</item>
+				Pour la sauce:
+				<item>
+					2 cuillerées de gelée de groseilles, 3 cuillerées de
+					crème fraîche fécule
+				</item>
+			</ingrédients>
+			<préparation>
+				<item>
+					Préparez la marinade avec tous les ingrédients
+					indiqués et plongez-y le filet de façon à ce qu'il y
+					baigne pendant douze heures.
+				</item>
+				<item>
+					Au moment de le faire cuire, égouttez le rôti,
+					épongez-le et faites-le cuire à four modéré pendant
+					une heure trente, après l'avoir badigeonné d'huile
+					d'arachide et légèrement assaisonné.
+				</item>
+				<item>
+					Tandis que s'opère la cuisson, faites réduire la
+					marinade à feu vif de façon à obtenir un quart de
+					litre de sauce.
+				</item>
+				<item>
+					Quelques minutes avant de servir, ajoutez à cette
+					réduction la gelée de groseilles et la crème
+					fraîche. Mélangez bien au fouet. Cette sauce ne doit
+					pas bouillir. Goûtez-la, rectifiez l'assaisonnement
+					et versez le cognac.
+				</item>
+				<item>
+					Dressez la viande découpée sur un plat, nappez-la de
+					quelques cuillérées de sauce et offrez le restant en
+					saucière.
+				</item>
+				<item>
+					Accompagnez de marrons braisés et de pommes aux
+					fruits rouges.
+				</item>
+				Pommes aux fruits rouges
+				<item>
+					Eplucher, couper en 2 et évider les pommes. Remplir
+					le centre d'un mélange confiture de groseille/fruits
+					rouges. Piquer d'un clou de girofle. Cuire au four.
+				</item>
+				Marrons
+				<item>
+					Pour les peler : 3 mn en cocotte minute. Pocher 20
+					mn dans du bouillon (ou du lait). Faire braiser avec
+					du beurre.
+				</item>
+			</préparation>
+		</recette>
+	</rubrique>
+	<rubrique>
+		<nom>Desserts</nom>
+		<recette>
+			<nom>Tarte aux mirabelles</nom>
+			<temps>Cuisson : 30 à 40 mn</temps>
+			<ingrédients>
+				<item>1 kg de mirabelles</item>
+				<item>
+					Mélange : 4 biscuits à la cuillère, 2 c.à c. bombées
+					de poudre d'amandes, 3 c.à c. bombées de sucre
+				</item>
+				<item>
+					Pâte brisée: 250 g. de farine, 1/2 sachet de levure,
+					1 c.à s. de sucre, 125 g de beurre, 1 verre d'eau,
+					sel
+				</item>
+			</ingrédients>
+			<préparation>
+				<item>Faire la pâte et la précuire pendant 10 mn.</item>
+				<item>
+					Mélanger les biscuits émiettés, la poudre d'amande,
+					le sucre. Disposer le mélange sur la pâte.
+				</item>
+				<item>Dénoyauter les mirabelles, les disposer.</item>
+				<item>
+					Sucrer la tarte et l'enfourner pendant 30 à 40 mn à
+					180-200° (th.6-7).
+				</item>
+			</préparation>
+		</recette>
+	</rubrique>
+</recettes>

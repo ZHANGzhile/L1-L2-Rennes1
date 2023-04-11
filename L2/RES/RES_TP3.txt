@@ -1,0 +1,34 @@
+MOULHERAT Hadrien 
+ZHANG Zhile
+
+Q.2.1.1:	IPv4: 148.60.1.12
+			MAC: 14:b3:1f:01:d1:0e
+
+Q.2.2.1:	
+			UDP      | Couche Transport
+			IPv4     | Couche Reseaux
+			Ethernet | Couche Liaison
+
+Faire petite phrase
+
+Q.2.2.2:	Le protocole de couche transport utilise est le protocole UDP (Champs "Protocol" du protocole IPv4).
+			Le port source de la machine qui fait la requete DNS est 51020 (Champs "Source Port" du protocole UDP).
+			Le Serveur DNS ecoute sur le port 53 (Champs "Destination Port" du protocole UDP).
+			Le port genere aleatoirement est le port source.
+
+Q.2.2.3: Pour connaitre chaque protocole empile, on utilise
+		 D'une part le champs **Encapsulation type** Ethernet (1) de la couche physique.
+		 D'autre part le champs **Type** IPv4 (0x0800) du protocole Ethernet.
+		 Enfin dans le protocole IPv4 on utilise le champs **Protocol** UDP (17).
+
+Q.2.3.1: l'utilite du DNS est de convertir une requete en clair (irisa.fr) en adresse. C'est ce que demande la premier echange DNS. Le deuxiemme lui repond l'adresse.
+
+Q.2.3.2:  148.60.15.109
+
+Q.2.4.1: Le champ qui permet de faire la distinction entre les paquets des deux connexions TCP est le champs **Source Port**.
+
+Q.2.4.2: Le numero du port de destination TCP utilise par le client est le port 80. Il correspond bien a un port *well-know* de TCP, car le port est inscrit dans le fichier des port ouvert **/etc/services**.
+
+Q.2.4.3:
+
+Q.2.4.4: Le numero de sequence TCP de premier paquet est 0 (**Sequence number: 0**).

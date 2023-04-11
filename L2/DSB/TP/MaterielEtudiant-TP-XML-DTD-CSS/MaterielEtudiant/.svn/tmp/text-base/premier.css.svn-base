@@ -1,0 +1,69 @@
+racine {
+	display: block;
+	margin-top:45px;
+	margin-left: 30% ;
+	margin-right: 10% ;	
+	font-family:Arial,sans-serif; color:maroon;
+	font-size:60pt;
+	background:url(montagnes.gif) repeat-x;
+	}
+P {
+	display: block;
+	margin-top:200px;
+	margin-left: -30% ;
+	font-size: x-large;
+}
+I {
+	display: block;
+	margin-left: 10% ;
+	font-size: x-large;
+}
+petit-texte[date]:before {
+	margin-left: -40% ;
+	font-family : sans-serif;
+	font-size: x-large;
+	font-weight:bold;
+	content:"Un petit-texte XML";
+	}
+petit-texte[date] {
+	margin-left: 30% ;
+	margin-right: 10% ;	
+}
+petit-texte[date]:after {
+	display: block;
+	margin-top: 6em;
+	margin-left: -40% ;
+	font-family : monospace;
+	font-size: small;
+	content:"Version du "attr(date) ;
+	}
+titre {
+	display: block;
+	margin-left: -8% ;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	font-family : sans-serif;
+	font-size: large;
+	color:navy;
+} 
+
+pgf {
+	display: block;
+	margin-top: 0.5em ;
+	margin-left: +4% ;
+	font-family : serif;
+	font-size: medium;
+	border-left: solid;
+	border-left-width: medium;
+	border-color: red ;
+	padding-left: 1em;
+	text-align: justify;
+}
+em {
+	font-style: italic ;
+}
+
+em[force=excessive] {
+    font-style: italic;
+    font-variant: small-caps;
+}

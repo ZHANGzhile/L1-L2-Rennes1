@@ -1,0 +1,29 @@
+<!DOCTYPE hotel [
+<!ELEMENT hotel (documentation*, reservation*)>
+<!ELEMENT documentation (#PCDATA | lien)*>
+<!ATTLIST documentation date CDATA #IMPLIED>
+<!ATTLIST documentation auteur CDATA #IMPLIED>
+<!ELEMENT lien (#PCDATA)>
+<!ELEMENT reservation (#PCDATA | client)>
+<!ELEMENT client (nom+, passeport+ ,reserve+ ,servi+)>
+<!ATTLIST client tel CDATA #IMPLIED>
+<!ELEMENT passeport (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST nom type (Mme | Mr) "Mme">
+<!ELEMENT reserve (date+, chambre+)>
+<!ELEMENT servi (employe+)>
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date type (arrive | depar) "arrive">
+<!ELEMENT chambre (no_chambre , prix, note)>
+<!ATTLIST chambre type CDATA #REQUIRED>
+<!ELEMENT no_chambre (#PCDATA)>
+<!ELEMENT prix (#PCDATA)>
+<!ELEMENT note (no_note, montant)>
+<!ATTLIST note paye CDATA "false">
+<!ELEMENT no_note (#PCDATA)>
+<!ELEMENT montant (#PCDATA)>
+<!ELEMENT employe (no_employe, nom, poste)>
+<!ELEMENT no_employe (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT poste (#PCDATA)>
+]>

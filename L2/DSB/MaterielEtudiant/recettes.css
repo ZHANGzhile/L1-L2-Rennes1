@@ -1,0 +1,147 @@
+recettes {
+	display: block;
+	margin: 5pt;
+	border: none;
+	
+	background-color: #33FF33;
+	color: #00428C;
+	
+	font-size: medium;	
+	font-family: verdana, trebuchet, "Helvetica narrow", arial, helvetica,
+		sans-serif;
+}
+
+rubrique {
+	
+}
+
+rubrique nom {
+	display: block;
+	margin-top: 1em;
+	margin-left: 5%;
+	margin-right: 5%;
+	border: solid thin green;
+	
+	background-color: white;
+	
+	font-variant: small-caps;
+	font-size: 150%;
+	font-weight: normal;
+	
+	text-align: center;
+}
+recette {
+	display: block;
+	border: solid thin green;
+	margin-top: 1em;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	background: rgb(210, 210, 210);
+}
+
+recette nom {
+	display: block;	
+	border: none ;
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+	
+	background-color: rgb(210, 210, 210);
+	
+	font-size: 150%;
+	font-variant:normal;
+	font-weight: bold;
+	
+	text-align: left;
+}
+
+ingrédients:before {
+	content: url(ingredients.gif);
+}
+
+ingrédients {
+	display: block;
+	margin-left: 5%;
+	margin-top: 1em;
+	
+	font-size: 80%;
+	/* color: #333399; */
+	
+	border-left: thin solid;
+	padding-left: 1%;
+}
+
+ingrédients item {
+	display: list-item;
+	list-style-type: square; 
+	margin-left: 5%;
+	margin-right: 5%;
+	border-style: none;
+	border-color: #95ABD0;
+	
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	
+	background-color: #E4E5E7;	
+	
+	font-size: smaller;
+	line-height: 120%;
+	
+	text-align: justify;
+}
+
+temps {
+	display: block;
+	margin-right: 5%;
+	margin-top: 0.5em;
+
+	font-size: 80%;
+	
+	text-align: right;
+}
+préparation:before {
+	content: url(preparation.gif);
+}
+préparation {
+	display: block;
+	margin-top: 1em;
+	margin-left: 5%;
+	margin-bottom: 1em;
+	
+	font-style: normal;	
+	font-size: 80%;
+}
+
+préparation item {
+	display: block;
+	margin-top: 0.5em;
+	margin-right: 5%;
+	margin-left: 0%;
+	border-style: solid;
+	border-left-width: 1em;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-color: #95ABD0;
+	
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	padding-left: 1em;
+	padding-right: 1em;
+	
+	background-color: #E4E5E7;	
+	
+	font-size: smaller;
+	line-height: 120%;
+	
+	text-align: justify;
+}
+
+préparation item:first-letter {
+	font-size: 150%;
+	font-style: italic;
+	font-weight: normal;
+	color: #8b0000;
+}

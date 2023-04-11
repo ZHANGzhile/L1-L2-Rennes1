@@ -1,0 +1,70 @@
+body {
+	background:#ffffcc ;
+}
+
+.titreProjet {
+	color: red;
+} 
+
+h2{
+	display: block;
+	border: solid thin red;
+	margin-top: 1em;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	background: rgb(180, 210, 210);
+}
+h1{
+	text-align: center;
+	font-style: normal;
+	font-size: 200%;
+}
+
+.para{
+	margin-left:100pt;
+	margin-right:100pt ; 
+	font-family:Arial, sans-serif ;
+	font-size: 120%;
+}
+
+p[class="list"]{
+	font-family: Geneva, sans-serif ;
+	font-size: 105%;
+}
+p[class="nom"]{
+	text-align: center;
+	font-style: normal;
+	font-size: 100%;
+}
+
+p{
+	font-family:'time new reman' ;
+	font-size: 100%;
+}
+
+h1:hover{
+	color: red;
+}
+
+img[src = "./imageMCD.png"]{
+	margin-left:100pt;
+	margin-right:100pt ; 
+}
+
+p code{
+	font-style:italic ;
+	font-size: 95%;
+}
+
+li,table{
+    margin-left:100pt;
+	margin-right:100pt ; 
+	font-family:Arial, sans-serif ;
+	font-size: 115%;
+}
+
+table{
+	margin-left:100pt;
+	margin-right:100pt ; 
+}

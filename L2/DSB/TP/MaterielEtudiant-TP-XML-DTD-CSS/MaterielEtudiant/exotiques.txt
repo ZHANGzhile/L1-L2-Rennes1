@@ -1,0 +1,15 @@
+<!-- on y ajoute même des choses plus structurées , de là -->
+<P>&#192; part quelques caractères
+
+
+exotiques
+
+comme&#160;:
+<i>&#198; (une ligature),</i>
+<i>&#8734; et
+		&#8594;  (des symboles mathŽmatiques)</i>
+<i>&#x06b0; (arabe),</i>
+<i>&#x10da; (géorgien)</i>
+<i>&#x4eb0; (CJK)</i>
+</P>
+<!--  jusqu'ici -->

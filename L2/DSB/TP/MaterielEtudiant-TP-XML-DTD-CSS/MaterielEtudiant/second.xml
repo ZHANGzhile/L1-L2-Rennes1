@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet href="premier.css" type="text/css"?>
+<!DOCTYPE petit-texte SYSTEM "second.dtd">
+<petit-texte date="09-10-2004">
+	<!-- ceci est un document xml -->
+	<para>
+		<titre>Avertissement</titre>
+		<pgf>
+			Inventé par le célèbre Slalom Jérémie Menerlâche, le
+			Biglotron (dont les vrais-faux plans sont au coeur de
+			l'Opération Tupeutla) est sans nul doute la découverte la
+			plus scandaleusement oubliée par les autorités
+			scientifiques, militaires et religieuses de notre époque.
+		</pgf>
+		<pgf>
+			Puisse cette page contribuer à la notoriété méritée d'une
+			des plus audacieuses inventions qui ait germé de l'esprit
+			humain !
+		</pgf>
+	</para>
+	<para>
+		<titre>Début du texte</titre>
+		<pgf>
+			Dernier-né de la technique expérimentale d'expression
+			scientifique d'avant-garde, le Biglotron est un
+			extraordinaire appareil de synthèse dont la conception
+			révolutionnaire bouleverse de fond en comble toutes les lois
+			communément admises, tant dans le domaine de la physique
+			thermonucléaire que dans celui de la gynécologie dans
+			l'espace.
+		</pgf>
+		<pgf>
+			Entièrement réalisé en matière agnostique, autrement dit,
+			pour éclairer le profane, en roubélure de plastronium
+			salygovalent, il se présente sous la forme néo-classique
+			d'un tripottsolipède rectangle, c'est-à-dire d'un ictère
+			octopolygonal à incidence ipso-facto-verso-rectométrique.
+		</pgf>
+		<pgf>
+			Tel qu'il est, le Biglotron se compose, ou plus exactement
+			se décompose en trois circuits principaux dont deux
+			secondaires et un complémentaire et dont voici, par ordre
+			d'entrée en action, le processus fonctionnel de sa posologie
+			fondamentale :
+		</pgf>
+	</para>
+	<para>
+		<titre>Et il en reste sans doute</titre>
+		<pgf />
+	</para>
+</petit-texte>

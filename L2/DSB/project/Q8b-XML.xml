@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="Q10a-XML.css" type="text/css"?>
+<!DOCTYPE hotel SYSTEM "Q7-DTD2.dtd">
+<hotel>
+	<reservation>
+		Réservation 1 
+		<client tel="06.42.13.37.00">
+			<nom>Annie Foret</nom>
+			<passeport>passeport: 942AX458</passeport>
+			<reserve>
+				<date>Date d'arrivée : 01/01/2021</date>
+				<date type= "depart">Date de départ : 01/01/2022</date>
+				<chambre type="suite">
+					<no_chambre>Numéro de chambre : 404</no_chambre>
+					<prix>200 euros / nuit</prix>
+					<note paye="true">
+						<no_note>Note numéro : 12345</no_note>
+						<montant>Total : 5000 euros</montant>>
+					</note>
+				</chambre>
+			</reserve>
+			<servi>
+				<employe>
+					<no_employe>Numéro employé : 27S</no_employe>
+					<nom>Nom du serveur : Hadrien Moulherat</nom>
+					<poste>Room service</poste>
+				</employe>	
+			</servi>
+		</client>
+	</reservation>
+
+	<reservation>
+		Réservation 2 
+		<client>
+			<nom type="Mr">Jean</nom>
+			<passeport>passeport: 249ZA458</passeport>
+			<nom type="Mr">Michel</nom>
+			<passeport>passeport: 249ZA457</passeport>
+			<reserve>
+				<date>Date d'arrivée : 03/04/2021</date>
+				<date type= "depart">Date de départ : 07/04/2022</date>
+				<chambre type="chambre double">
+					<no_chambre>Numéro de chambre : 400</no_chambre>
+					<prix>100 euros / nuit</prix>
+					<note paye="true">
+						<no_note>Note numéro : 12346</no_note>
+						<montant>Total : 400 euros</montant>>
+					</note>
+				</chambre>
+			</reserve>
+			<servi>
+				<employe>
+					<no_employe>Numéro employé : 10S</no_employe>
+					<nom>Nom du serveur : Zhile Zhang</nom>
+					<poste>Room service</poste>
+				</employe>
+				<employe>
+					<no_employe>Numéro employé : 27S</no_employe>
+					<nom>Nom du serveur : Hadrien Moulherat</nom>
+					<poste>Room service</poste>
+				</employe>		
+			</servi>
+		</client>
+	</reservation>
+</hotel>

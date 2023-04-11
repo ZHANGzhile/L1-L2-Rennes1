@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<bouquets>
+	<bouquet id="beaut´efatale" prix="164">
+		<fleur qt="16">tulipe blanche</fleur>
+		<fleur qt="1">begonia <b>bleu</b></fleur>
+	</bouquet>
+	<bouquet id="premiermai" prix="15">
+		<fleur qt="4">muguet</fleur>
+		<message>Bon premier mai ! </message>
+	</bouquet>
+	<bouquet id="premiermailuxe" prix="218">
+		<comme ref="premiermai"/>
+		<fleur qt="10">rose</fleur>
+	</bouquet>
+</bouquets>

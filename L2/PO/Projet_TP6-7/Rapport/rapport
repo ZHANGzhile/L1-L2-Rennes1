@@ -1,0 +1,52 @@
+•	Zhile Zhang
+•	Ilyes Sais
+
+
+Exercice 6 (un petit rapport ) :
+On discute les résultats suivant :
+le temps d'insertion et le temps d'accès List: /ns
+N: 10000 temps d'insertion: 445398179 temps d'acces: 798160
+N: 20000 temps d'insertion: 4987836612 temps d'acces: 1239826
+N: 30000 temps d'insertion: 23052913111 temps d'acces: 2790810
+N: 40000 temps d'insertion: 95950690656 temps d'acces: 2337236
+N: 50000 temps d'insertion: 220119926226 temps d'acces: 4207638
+N: 60000 temps d'insertion: 429676755748 temps d'acces: 2610569
+N: 70000 temps d'insertion: 668187985535 temps d'acces: 6315073
+N: 80000 temps d'insertion: 989791256345 temps d'acces: 3823474
+N: 90000 temps d'insertion: 1477731732542 temps d'acces: 4710770
+N: 10000 temps d'insertion: 8678459500 temps d'acces: 1321099
+
+le temps d'insertion et le temps d'acces arbre: /ns
+N: 10000 temp d'insertion: 37542900 temp d'acces: 21700
+N: 20000 temp d'insertion: 21978200 temp d'acces: 10100
+N: 30000 temp d'insertion: 48153800 temp d'acces: 11900
+N: 40000 temp d'insertion: 41887400 temp d'acces: 24500
+N: 50000 temp d'insertion: 47362200 temp d'acces: 15200
+N: 60000 temp d'insertion: 63462700 temp d'acces: 10600
+N: 70000 temp d'insertion: 78275600 temp d'acces: 16300
+N: 80000 temp d'insertion: 82763600 temp d'acces: 12100
+N: 90000 temp d'insertion: 83385500 temp d'acces: 17000
+N: 100000 temp d'insertion: 98808200 temp d'acces: 16700
+
+D’après les résultats précèdent on a que le temps d’insertion et le temps d’accès d’une Liste est plus grand que le temps d’insertion et le temps d’accès d’un Arbre.
+
+Parce que d’un arbre, la complexité pour la fonction get(=acces) et la même pour la fonction associe(=insertion):
+O(log n) dans le cas moyen,  O(n) dans le pire cas, n est le nombre de nœud de l’arbre.
+ 
+Par contre pour la liste ces deux fonctions s'exécutent dans le pire cas en O(n) opération, 
+où n est le nombre d'éléments contenus dans la liste(=la longueur de liste).
+
+On conclue que l’arbre est plus rapide que List .
+
+
+
+
+Courbe ATList (temps d’acces et temps d’insertion)
+
+Courbe ATTree (temps d’acces et temps d’insertion)
+
+Les deux courbs dans le fichier <<Les courbs.png>>
+
+
+ 
+ 

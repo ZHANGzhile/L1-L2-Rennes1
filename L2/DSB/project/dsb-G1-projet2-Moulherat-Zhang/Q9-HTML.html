@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Hotel</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="Q10b-HTML.css" />
+</head>
+<body>
+	<h1>Notre projet</h1>
+	<p class="nom">ZHANG Zhile , Moulherat Hadrien</p>
+	<h2>Validation</h2>
+	<p class="para">Validation de <a href="http://validator.w3.org/">XHTML</a></p>
+	<p class="para">Validation de <a href="http://jigsaw.w3.org/css-validator/">CSS</a></p>
+	<h2>Introduction</h2>
+	<p class="para">Le but de ce projet intitulé <span class="titreProjet">Base de donnée hotel</span> est le suivant : 
+	Comprendre l'organisation d'un hotel et crée un modèle fonctionnel qui permette de gerer les differents aspects de l'hotelerie.<br></br>
+	Ainsi notre modèle simplifié gère les principaux aspects comme la gestion des clients, des résèrvations ou encore l'affectation des employés a des chambres.<br></br>
+	Sont également disponible les versions <a href="./base_zhilzhang_Hotel.sql">SQL</a>,<a href="./Q8a-XML.xml">XMLa </a> et <a href="./Q8b-XML.xml">XMLb</a>(<a href="./Q7-DTD2.dtd">DTD</a> associée).</p>
+
+	<h2>Modèle conceptuel</h2>
+	<p class="para">Sur le schéma suivant figure notre modèle conceptuel de données : </p>
+	<p><img src="./imageMCD.png" alt="&lt;image&gt;" width="566" height="315"/></p>
+	<h2>Requêtes</h2>
+	<p class="para">Nous présentons 5 analyses : <strong>(Méthode: Nous avons utilisé la console de firefox pour obtenir les résultats XPATH.)</strong></p>
+	<ol style="list-style: upper-roman;">
+		<li>
+			<p class="list">Pour Q8a-XML.xml respectant Q7-DTD2.dtd : fournir les contenus des éléments &lt;documentation&gt;</p>
+			<p class="list"><code class="XPATH">$x("//documentation")</code></p>
+		</li>
+		<li>
+			<p class="list">Pour Q8a-XML.xml respectant Q7-DTD2.dtd : fournir le premier élément &lt;documentation&gt;</p>
+			<p class="list"><code class="XPATH">$x("//documentation[1]")</code></p>
+		</li>
+		<li>
+			<p class="list">Pour Q8a-XML.xml respectant Q7-DTD2.dtd : fournir les éléments &lt;documentation&gt; n’ayant pas d’élément &lt;lien&gt;</p>
+			<p>Celle-ci ne contient pas les &lt;lien&gt; : </p>
+			<p class="list"><code class="XPATH">$x("//documentation[not(contains(.,lien))]")</code></p>
+			<p>Celle-ci contient les &lt;lien&gt; : </p>
+			<p class="list"><code class="XPATH">$x("//documentation[contains(.,lien)]")</code></p>
+		</li>
+		<li>
+			<p class="list">Pour Q9-HTML.html : fournir les valeurs des attributs href</p>
+			<p class="list"><code class="XPATH">$x("//@href")</code></p>
+		</li>
+		<li>
+	      	 <p class="list">Pour Q9-HTML.html : compter le nombre d’images dans un document XHTML</p>
+	      	 <p class="list"><code class="XPATH">$x("count(//img)")</code></p>
+		</li>
+	</ol>
+	<table width="250" border="1">
+		<caption><strong>Résultats</strong></caption>
+		<tr>
+			<th>Requêtes</th>
+			<th>Résultats</th>
+		</tr>
+		<tr>
+			<td>Requête1</td>
+			<td><img src="./requete1.png" alt="résultat requête 1"/></td>
+		</tr>
+		<tr>
+			<td>Requête2</td>
+			<td><img src="./requete2.png" alt="résultat requête 2"/></td>
+		</tr>
+		<tr>
+			<td>Requête3</td>
+			<td><img src="./requete3.png" alt="résultat requête 3"/></td>
+		</tr>
+		<tr>
+			<td>Requête4</td>
+			<td><img src="./requete4.png" alt="résultat requête 4"/></td>
+		</tr>
+		<tr>
+			<td>Requête5</td>
+			<td><img src="./requete5.png" alt="résultat requête 4"/></td>
+		</tr>
+	</table>
+</body>
+</html>

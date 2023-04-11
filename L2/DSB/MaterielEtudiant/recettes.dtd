@@ -1,0 +1,11 @@
+<!ELEMENT recettes (rubrique)+>
+<!ELEMENT rubrique (nom,(recette)+)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT recette (nom, temps?, ingrédients, préparation)>
+<!ELEMENT nom ANY>
+<!ELEMENT temps (#PCDATA)>
+<!ELEMENT ingrédients (#PCDATA | item)*>
+<!ELEMENT préparation (#PCDATA | item)*>
+<!ELEMENT item ANY>
+
+

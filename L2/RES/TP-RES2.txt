@@ -1,0 +1,31 @@
+Zhile ZHANG
+Hadrien MOULHERAT
+
+Q.1.4.1: Adresse Ethernet (MAC) : **14:b3:1f:01:d1:0e**
+	 Adresse IP : **148.60.1.12**
+	 Les adresses sont coherantes avec la sortie de commande de "ip address"
+
+Q.1.4.2: Le contenue du champ Type de la trame Ethernet est: **0x0800**. Cette valeur sert a indiquer au protocole Ethernet qu'il s'agit d'une addresse IPv4.
+
+Q.1.4.3: Adresse Ethernet de destination : **3c:08:f6:0e:f6:6f**
+	Adresse IP de destination : **148.60.15.102**
+
+Q.1.4.4: L'identifiant O.U.I de la carte reseau est **14:b3:1f**. Les nom du constructeur associer a cet O.U.I est Dell Inc.
+
+Q.1.4.5: La taille de l'en-tete du paquet IP est de 20 octet. La taille totale du paquet est de 507 octet.
+
+Q.1.4.6: Les donnees transportees par le paquet IP sont destinees au protocole TCP, car dans le champ "Protocol" du paquet IP il y a la valeur 6, qui correspond au protocole TCP.
+
+Q.1.4.7: La valeur du champ "Time to live" est 64. Cette valeur correspond a la duree de vie en secondes du datagrame.
+
+Q.1.4.8: Tout d'abord la station emetrice envoie une **ARP request** en utilisant l'adresse de broadcast pour que toutes les stations considerent le message. Lorsque la station concernee recois la reponse elle renvoie une reponse ARP (**ARP response**). Quand la machine emetrice recois la reponse ARP, elle envoie une **ICMP request** destinee a la machine concernee et au routeur. Enfin le routeur renvoie la reponse ICMP.
+
+Q.1.4.9: Les adresses MAC et IP utilise dans chacun des messages ARP sont les adresses MAC et IP de notre station **14:b3:1f:01:d1:0e**, **148.60.1.12** pour indiquer au reste du reseaux a qui ils doivent s'adresser pour repondre. Ainsi que les adresses MAC et IP **00:00:00:00:00:00**, **148.60.1.11** (adresse IP de la machine voisine) pour que le message soit destinee a toutes les machines du reseaux (dand notre cas il s'agit pas de toutes les machines reseaux, mais de la machine voisine).
+
+Q1.4.10: La commande **ip neighbour show** affiche:
+	148.60.6.217 dev enp0s31f6 lladdr 74:e6:e2:da:6d:e6 STALE
+	148.60.6.164 dev enp0s31f6 lladdr 74:e6:e2:da:6e:45 STALE
+	148.60.1.11 dev enp0s31f6 lladdr 14:b3:1f:01:ac:72 STALE
+
+La commande nous donnes les informations des entrees du cache ARP.
+

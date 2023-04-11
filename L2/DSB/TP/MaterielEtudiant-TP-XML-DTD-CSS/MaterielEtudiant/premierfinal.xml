@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="premier.css" type="text/css"?>
+<racine>
+<!-- ceci est un document xml -->
+Qui ne contient pas grand chose
+<P>&#192; part quelques caractères
+
+
+exotiques
+
+comme&#160;:
+<I>&#198; (une ligature),</I>
+<I>&#8734; et
+		&#8594;  (des symboles mathématiques)</I>
+<I>&#x06b0; (arabe),</I>
+<I>&#x10da; (géorgien)</I>
+<I>&#x4eb0; (CJK)</I>
+</P>
+</racine>

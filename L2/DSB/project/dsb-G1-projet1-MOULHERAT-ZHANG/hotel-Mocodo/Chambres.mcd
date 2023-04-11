@@ -1,0 +1,10 @@
+CLIENT: id.passeport,nom,tel
+
+SERVIR, 1N CLIENT, 1N EMPLOYE
+RESERVE, 0N CHAMBRE, 1N CLIENT: check-in date, check-out date
+
+EMPLOYE: no.employe,nom, poste
+GERE, 1N CHAMBRE, 1N EMPLOYE
+CHAMBRE:no.chambre,type,prix
+REGLE, 1N CHAMBRE, 11 NOTE
+NOTE: no.note,montantDesFrais
